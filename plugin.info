@@ -1,0 +1,10 @@
+{
+  "title": "$:/plugins/brooksn/dropbox-saver",
+  "description": "Save to Dropbox",
+  "author": "Brooks Newberry",
+  "version": "0.1.0",
+  "core-version": ">=5.0.0",
+  "source": "https://github.com/brooksn",
+  "plugin-type": "plugin",
+  "list": "readme"
+}

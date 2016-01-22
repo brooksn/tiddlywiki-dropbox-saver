@@ -1,0 +1,9 @@
+title: $:/plugins/brooksn/dropbox-saver/readme
+
+Click here to authorize with Dropbox: https://www.dropbox.com/1/oauth2/authorize?client_id=w4agulqe45xwgtx&response_type=token&redirect_uri=http%3A%2F%2Flocalhost
+
+Set bearer token in [[$:/plugins/brooksn/dropbox-saver/DropboxBearerToken]]
+
+Set your desired file path in [[$:/plugins/brooksn/dropbox-saver/DropboxPath]]
+
+You must save your wiki manually after the options are set for the first time.
