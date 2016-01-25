@@ -31,7 +31,7 @@ DropboxUp.prototype.save = function(text, method, callback) {
 	}
 
 	var path = $tw.wiki.getTiddlerText(filepath) || '';
-	var token = $tw.wiki.getTiddlerText(bearertoken) || '';
+	var token = $tw.wiki.getTiddlerText(bearertoken).split(' ')[0] || '';
 	if(path.length < 3) { callback('Set Dropbox file path in ' + filepath); }
 	if(token.length < 24) { callback('Set Dropbox auth code in ' + bearertoken); }
 	
@@ -63,7 +63,7 @@ Static method that returns true if this saver is capable of working
 exports.canSave = function(wiki) {
 	var savable = false;
 	var path = $tw.wiki.getTiddlerText(filepath) || '';
-	var token = $tw.wiki.getTiddlerText(bearertoken) || '';
+	var token = $tw.wiki.getTiddlerText(bearertoken).split(' ')[0] || '';
 	if(path.length > 3 && token.length > 44) { savable = true; }
 	return savable;
 };
